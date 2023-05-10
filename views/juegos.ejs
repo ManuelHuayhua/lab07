@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>juegos</title>
+</head>
+<body>
+  <h1>juegos</h1>
+
+  <ul>
+    <% juegos.forEach(function(juego) { %>
+      <li>
+        <h2>Nombre del juego: <%= juego.titulo %></h2>
+        <p>Género: <%= juego.genero %></p>
+        <p>Plataforma: <%= juego.plataforma %></p>
+      </li>
+    <% }); %>
+    
+  </ul>
+  <a href="http://localhost:3000">Atras</a>
+</body>
+</html>
